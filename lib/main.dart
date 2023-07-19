@@ -13,7 +13,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       title: 'Printer Demo By Serag Sakr',
       navigatorKey: appNavigatorKey,
       theme: ThemeData(
@@ -71,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
         },
         tooltip: 'Print',
         child: const Icon(Icons.print),
-      ),
+      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 
