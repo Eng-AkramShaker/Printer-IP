@@ -26,16 +26,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class Animal {
-  final int id;
-  final String name;
-
-  Animal({
-    required this.id,
-    required this.name,
-  });
-}
-
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
   @override
@@ -180,18 +170,15 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               SizedBox(height: 80),
               ElevatedButton(
-                  onPressed: () {
-                    log(ipController.text);
-                    printTest(ipController.text);
-
-                    //  Snak_Bar(context, 'تم بنجاح الطباعة');
-                  },
-                  child: Container(
-                      alignment: Alignment.center,
-                      child: Text(
-                        'تأكيد',
-                        style: TextStyle(fontSize: 20),
-                      ))),
+                onPressed: () {
+                  log(ipController.text);
+                  printTest(ipController.text);
+                },
+                child: Container(
+                  alignment: Alignment.center,
+                  child: Text('تأكيد', style: TextStyle(fontSize: 20)),
+                ),
+              ),
               SizedBox(height: 80),
             ],
           ),
