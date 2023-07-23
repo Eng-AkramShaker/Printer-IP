@@ -34,7 +34,11 @@ packages:
     source: hosted
     version: "1.3.0"
   charset_converter:
+<<<<<<< HEAD
+    dependency: "direct main"
+=======
     dependency: transitive
+>>>>>>> 8e09d1fa6a9b2447135b42c3f580248777f898c9
     description:
       name: charset_converter
       sha256: e4827b2d623ab75c2b6767d69e03485ea5bc894db6f6bdcb2ffeda58446bbe26
