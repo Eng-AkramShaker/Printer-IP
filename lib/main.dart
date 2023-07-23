@@ -191,7 +191,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     const SizedBox(height: 80),
                     ElevatedButton(
                         onPressed: () {
-                          _print2();
+                          print2();
 
                           Snak_Bar(context, 'تم بنجاح الطباعة');
                         },
@@ -211,7 +211,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          _print();
+          print();
         },
         tooltip: 'Print',
         child: const Icon(Icons.print),
@@ -219,12 +219,12 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  void _print() {
+  void print() {
     log(ipController.text);
     printTest(ipController.text);
   }
 
-  void _print2() {
+  void print2() {
     log(ctrlll.text);
     printTest(ctrlll.text);
   }
