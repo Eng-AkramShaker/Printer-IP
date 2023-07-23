@@ -49,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
           const Padding(
             padding: EdgeInsets.all(8.0),
             child: Text(
-              'Enter Printer IP Address',
+              'Enter Printer IP Address ',
             ),
           ),
           Padding(
@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
         },
         tooltip: 'Print',
         child: const Icon(Icons.print),
-      ), // This trailing comma makes auto-formatting nicer for build methods .
+      ), // This trailing comma makes auto-formatting nicer for build methods  .
     );
   }
 
