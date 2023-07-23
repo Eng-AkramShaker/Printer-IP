@@ -38,8 +38,11 @@ dependencies:
   esc_pos_printer: ^4.1.0
   esc_pos_utils:
   flutter_switch: ^0.3.2
+<<<<<<< HEAD
   charset_converter: ^2.1.1
 
+=======
+>>>>>>> 8e09d1fa6a9b2447135b42c3f580248777f898c9
 
 
 dev_dependencies:

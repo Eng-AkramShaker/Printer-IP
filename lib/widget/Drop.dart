@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 
+<<<<<<< HEAD
 // class Custom_Drop extends StatefulWidget {
 //    Custom_Drop({
 //     super.key,
@@ -89,6 +90,8 @@ Widget Custome_Drop({
   ));
 }
 
+=======
+>>>>>>> 8e09d1fa6a9b2447135b42c3f580248777f898c9
 // ========================================================================================================
 class Custom_Drop extends StatefulWidget {
   const Custom_Drop({
@@ -139,6 +142,14 @@ class Custom_DropState extends State<Custom_Drop> {
               });
             },
             items: dropdownItems),
+<<<<<<< HEAD
+=======
+        const SizedBox(height: 20),
+        Text(
+          selectedValue == null ? "" : selectedValue.toString(),
+          style: const TextStyle(fontSize: 20),
+        )
+>>>>>>> 8e09d1fa6a9b2447135b42c3f580248777f898c9
       ],
     ));
   }
@@ -159,8 +170,13 @@ class Custom_Drop2 extends StatefulWidget {
 class Custom_Drop2State extends State<Custom_Drop2> {
   String? selectedValue;
 
+<<<<<<< HEAD
   dynamic v_1 = "mm 80";
   dynamic v_2 = "mm 85";
+=======
+  dynamic v_1 = "80 m";
+  dynamic v_2 = "85 m";
+>>>>>>> 8e09d1fa6a9b2447135b42c3f580248777f898c9
 
   List<DropdownMenuItem<String>> get dropdownItems {
     List<DropdownMenuItem<String>> menuItems = [
@@ -190,6 +206,14 @@ class Custom_Drop2State extends State<Custom_Drop2> {
               });
             },
             items: dropdownItems),
+<<<<<<< HEAD
+=======
+        const SizedBox(height: 20),
+        Text(
+          selectedValue == null ? "" : selectedValue.toString(),
+          style: const TextStyle(fontSize: 20),
+        )
+>>>>>>> 8e09d1fa6a9b2447135b42c3f580248777f898c9
       ],
     ));
   }
