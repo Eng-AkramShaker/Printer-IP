@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
         },
         tooltip: 'Print',
         child: const Icon(Icons.print),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ), // This trailing comma makes auto-formatting nicer for build methods .
     );
   }
 
