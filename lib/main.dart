@@ -49,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
           const Padding(
             padding: EdgeInsets.all(8.0),
             child: Text(
-              'Enter Printer IP Address ',
+              'Enter Printer IP Address',
             ),
           ),
           Padding(
