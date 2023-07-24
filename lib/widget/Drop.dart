@@ -1,15 +1,17 @@
-// ignore_for_file: camel_case_types, file_names, non_constant_identifier_names, prefer_const_constructors, avoid_print
+// ignore_for_file: camel_case_types, file_names, non_constant_identifier_names, prefer_const_constructors, avoid_print, must_be_immutable
 
 import 'package:flutter/material.dart';
 
 class Custom_Drop extends StatefulWidget {
-  const Custom_Drop({
+  Custom_Drop({
     super.key,
     selectedValue,
-    required controller,
+    required this.controller,
     required this.hintText,
   });
   final String? hintText;
+  var controller = TextEditingController();
+
   @override
   State<Custom_Drop> createState() => Custom_DropState();
 }
@@ -57,7 +59,7 @@ class Custom_DropState extends State<Custom_Drop> {
 
         selectedValue == 'Internet'
             ? TextField(
-                controller: controller,
+                controller: widget.controller,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'IP Address',
