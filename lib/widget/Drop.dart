@@ -90,6 +90,61 @@ class Custom_DropState extends State<Custom_Drop> {
   }
 }
 
+// ========================================================================================================
+class Custom_Drop1 extends StatefulWidget {
+  const Custom_Drop1({
+    super.key,
+    selectedValue,
+    required this.hintText,
+  });
+  final String? hintText;
+  @override
+  State<Custom_Drop1> createState() => Custom_Drop1State();
+}
+
+class Custom_Drop1State extends State<Custom_Drop1> {
+  String? selectedValue;
+
+  dynamic v_1 = "MFP 135w";
+  dynamic v_2 = "LBP6030B";
+  dynamic v_3 = "hp 1025";
+  dynamic v_4 = "vB690B";
+
+  List<DropdownMenuItem<String>> get dropdownItems {
+    List<DropdownMenuItem<String>> menuItems = [
+      DropdownMenuItem(value: v_1, child: Text(v_1)),
+      DropdownMenuItem(value: v_2, child: Text(v_2)),
+      DropdownMenuItem(value: v_3, child: Text(v_3)),
+      DropdownMenuItem(value: v_4, child: Text(v_4)),
+    ];
+    return menuItems;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Form(
+        child: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        DropdownButtonFormField(
+            decoration: InputDecoration(
+              filled: true,
+              hintText: widget.hintText,
+              fillColor: Colors.transparent,
+            ),
+            dropdownColor: const Color.fromARGB(255, 245, 244, 244),
+            value: selectedValue,
+            onChanged: (String? newValue) {
+              setState(() {
+                selectedValue = newValue!;
+              });
+            },
+            items: dropdownItems),
+      ],
+    ));
+  }
+}
+
 // ==========================================================================
 class Custom_Drop2 extends StatefulWidget {
   const Custom_Drop2({
