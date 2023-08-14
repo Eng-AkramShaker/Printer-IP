@@ -123,7 +123,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const Text('   .لطابعة', style: TextStyle(fontSize: 26)),
+        title: const Text('الطابعة', style: TextStyle(fontSize: 26)),
       ),
       body: SingleChildScrollView(
         child: Padding(
